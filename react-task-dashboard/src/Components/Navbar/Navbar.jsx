@@ -6,15 +6,17 @@ import {
 	SettingsOutline,
 	ShareSocialOutline,
 } from "react-ionicons";
-
+import { useSearch } from "../../context/SearchContext";
 import "./Navbar.css";
 
 const Navbar = () => {
+	const { setQuery } = useSearch();
+
 	return (
 		<div className="navbar-container">
 			<div className="navbar-left">
 				<PersonCircle color="#fb923c" width="28px" height="28px" />
-				<span className="navbar-title">Task Dashboard</span>
+				<span className="navbar-title">Task Manager</span>
 				<ChevronDown color="#fb923c" width="16px" height="16px" />
 			</div>
 
@@ -24,6 +26,7 @@ const Navbar = () => {
 					type="text"
 					placeholder="Search"
 					className="search-input"
+					onChange={(e) => setQuery(e.target.value)}
 				/>
 			</div>
 

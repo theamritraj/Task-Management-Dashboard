@@ -4,21 +4,24 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Tasks from './pages/Tasks';
 import Settings from './pages/Settings';
+import { SearchProvider } from './context/SearchContext'; // ✅ Import context
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Sidebar />
-      <div style={{ marginLeft: '230px', marginTop: '70px', padding: '20px' }}>
-        <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </div>
-    </Router>
+    <SearchProvider> {/* ✅ Wrap whole app */}
+      <Router>
+        <Navbar />
+        <Sidebar />
+        <div style={{ marginLeft: '230px', marginTop: '70px', padding: '20px' }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="/dashboard" />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
+      </Router>
+    </SearchProvider>
   );
 }
 

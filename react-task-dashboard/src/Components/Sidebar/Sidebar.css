@@ -60,6 +60,7 @@
 	padding: 20px 12px;
 	gap: 10px;
 	position: relative;
+	cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -78,14 +79,17 @@
 	background-color: transparent;
 	transition: background-color 0.2s;
 	gap: 10px;
+	cursor: pointer;
 }
 
 .sidebar-link:hover {
 	background-color: #fdba74;
+	cursor: pointer;
 }
 
 .sidebar-link.active {
 	background-color: #fdba74;
+	cursor: pointer;
 }
 
 .link-title {

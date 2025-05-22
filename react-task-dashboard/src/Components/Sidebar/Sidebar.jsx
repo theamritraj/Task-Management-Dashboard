@@ -1,56 +1,63 @@
-import { NavLink } from "react-router-dom";
 import {
+  AppsOutline,
+  GridOutline,
   HomeOutline,
-  PieChartOutline,
-  NotificationsOutline,
-  SettingsOutline,
   LogOutOutline,
+  NewspaperOutline,
+  NotificationsOutline,
+  PeopleOutline,
+  PieChartOutline,
 } from "react-ionicons";
-import "./Sidebar.css";
+
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   const navLinks = [
     {
       title: "Dashboard",
-      icon: <PieChartOutline color="#555" width="22px" height="22px" />,
       path: "/dashboard",
+      icon: <HomeOutline color="#555" width="22px" height="22px" />,
     },
-    {
+     {
       title: "Tasks",
-      icon: <NotificationsOutline color="#555" width="22px" height="22px" />,
       path: "/tasks",
+      icon: <NewspaperOutline color="#555" width="22px" height="22px" />,
     },
     {
       title: "Settings",
-      icon: <SettingsOutline color="#555" width="22px" height="22px" />,
       path: "/settings",
+      icon: <PieChartOutline color="#555" width="22px" height="22px" />,
     },
+    
+   
   ];
 
   return (
-    <div className="sidebar-container">
-      <div className="sidebar-header">
-        <span className="logo-full">Logo.</span>
-        <span className="logo-short">L.</span>
+    <div className="fixed left-0 top-0 md:w-[230px] w-[60px] overflow-hidden h-full flex flex-col">
+      <div className="w-full flex items-center md:justify-start justify-center md:pl-5 h-[70px] bg-[#fff]">
+        <span className="text-orange-400 font-semibold text-2xl md:block hidden">Logo.</span>
+        <span className="text-orange-400 font-semibold text-2xl md:hidden block">L.</span>
       </div>
 
-      <div className="sidebar-links">
+      <div className="w-full h-[calc(100vh-70px)] border-r flex flex-col md:items-start items-center gap-2 border-slate-300 bg-[#fff] py-5 md:px-3 px-3 relative">
         {navLinks.map((link) => (
           <NavLink
-            to={link.path}
             key={link.title}
+            to={link.path}
             className={({ isActive }) =>
-              `sidebar-link ${isActive ? "active" : ""}`
+              `flex items-center gap-2 w-full rounded-lg px-2 py-3 cursor-pointer hover:bg-orange-300 ${
+                isActive ? "bg-orange-300" : "bg-transparent"
+              }`
             }
           >
             {link.icon}
-            <span className="link-title">{link.title}</span>
+            <span className="font-medium text-[15px] md:block hidden">{link.title}</span>
           </NavLink>
         ))}
 
-        <div className="logout-button">
-          <LogOutOutline color="#000" width="22px" height="22px" />
-          <span className="link-title">Log Out</span>
+        <div className="flex absolute bottom-4 items-center md:justify-start justify-center gap-2 md:w-[90%] w-[70%] rounded-lg hover:bg-orange-300 px-2 py-3 cursor-pointer bg-gray-200">
+          <LogOutOutline />
+          <span className="font-medium text-[15px] md:block hidden">Log Out</span>
         </div>
       </div>
     </div>
