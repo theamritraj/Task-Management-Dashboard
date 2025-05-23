@@ -58,6 +58,14 @@ Start the development server:
 
 
 
+
+    Log In Details :-
+
+    Email :- Admin@123
+    password :- Admin12345
+
+
+
 🙌 Author
     Made with ❤️ by Amrit Raj
 
