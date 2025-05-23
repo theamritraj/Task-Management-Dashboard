@@ -1,12 +1,65 @@
-# React + Vite
+📝 Task Manager App
+This is a simple and clean Task Manager web application made using React and Vite. It helps users to add, edit, delete, and search their daily tasks easily. The goal of this app is to improve your productivity by keeping your tasks well organized.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚙️ Built With
+    React.js
+    Vite
 
-Currently, two official plugins are available:
+🚀 Features
+🔐 User Authentication
+Secure login and signup pages for user authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧾 Task Management
+Add, update, and delete tasks. Tasks are displayed in a card format with details and action buttons.
 
-## Expanding the ESLint configuration
+🔍 Search Functionality
+Search bar to filter tasks dynamically based on task name or description.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌙 Clean & Modern UI
+Sidebar navigation with options for Dashboard, Tasks, and Settings. Intuitive and visually appealing layout.
+
+📱 Responsive Design
+Works seamlessly across devices (desktop, tablet, and mobile).
+
+
+📋 Task View
+Shows all tasks with Edit and Delete options.
+
+🔐 Login Page
+Secure login interface with signup link.
+
+🔎 Search Filter
+Search tasks dynamically using the top search bar.
+
+🛠️ Tech Stack
+Frontend: React.js (Vite)
+
+Styling: CSS (with Flexbox & responsive design)
+
+Icons & UI Components: Custom and Material Icons
+
+State Management: useState, useEffect.
+
+
+
+Clone the repository:
+  git clone https://github.com/yourusername/task-manager.git
+
+
+Navigate to the project directory:
+    cd react-task-dashboard
+
+Install dependencies:
+    npm install
+
+
+Start the development server:
+    npm run dev
+
+
+
+🙌 Author
+Made with ❤️ by Amrit Raj
+
+
+

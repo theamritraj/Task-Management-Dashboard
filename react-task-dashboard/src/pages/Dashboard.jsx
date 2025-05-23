@@ -31,10 +31,10 @@ const Dashboard = () => {
         formData.email === 'Admin@123' &&
         formData.password === 'Admin12345'
       ) {
-        alert(`Login successful`);
-        navigate('/tasks'); // ✅ Redirect to TaskPage
+        // alert(`Login successful`);
+        navigate('/tasks'); // Redirect to TaskPage
       } else {
-        alert('Invalid email or password ❌');
+        alert('Invalid email or password');
         return;
       }
     }
@@ -97,7 +97,7 @@ const Dashboard = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md font-semibold"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md font-semibold"
           >
             {isSignup ? 'Sign Up' : 'Login'}
           </button>

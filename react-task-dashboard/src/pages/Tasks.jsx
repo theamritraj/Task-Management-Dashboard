@@ -113,19 +113,19 @@ const Tasks = () => {
           <p className="text-gray-500 col-span-full">No tasks found.</p>
         ) : (
           filteredTasks.map((task, index) => (
-            <div key={index} className="bg-white shadow border rounded p-4">
+            <div key={index} className="bg-white shadow  rounded p-4">
               <h3 className="font-semibold text-lg">{task.title}</h3>
               <p className="text-sm text-gray-600">{task.description}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <button
                   onClick={() => handleEdit(index)}
-                  className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
+                  className="bg-blue-500 text-white px-3 py-1 mt-4 rounded hover:bg-blue-600"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(index)}
-                  className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                  className="bg-red-500 text-white px-3 py-1 mt-4 rounded hover:bg-red-600"
                 >
                   Delete
                 </button>
@@ -137,7 +137,7 @@ const Tasks = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center px-4 z-50">
+        <div className="fixed inset-0  bg-opacity-30 flex items-center justify-center px-4 z-50">
           <div className="bg-white w-full max-w-md p-6 rounded shadow-lg relative">
             <button
               className="absolute top-2 right-3 text-gray-500 text-xl"
