@@ -43,7 +43,7 @@ State Management: useState, useEffect.
 
 
 Clone the repository:
-  git clone https://github.com/yourusername/task-manager.git
+  https://github.com/theamritraj/Task-Management-Dashboard
 
 
 Navigate to the project directory:
@@ -59,7 +59,7 @@ Start the development server:
 
 
 🙌 Author
-Made with ❤️ by Amrit Raj
+    Made with ❤️ by Amrit Raj
 
 
 
