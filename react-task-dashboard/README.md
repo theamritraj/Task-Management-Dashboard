@@ -36,7 +36,7 @@ Frontend: React.js (Vite)
 
 Styling: CSS (with Flexbox & responsive design)
 
-Icons & UI Components: Custom and Material Icons
+Icons & UI Components: Custom and React Icons
 
 State Management: useState, useEffect.
 
